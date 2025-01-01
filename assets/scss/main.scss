@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    touch-action: manipulation;
+}
+
+blockquote,
+body,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+figcaption,
+p,
+pre {
+    margin: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+embed,
+iframe,
+img,
+object,
+svg,
+video
+{
+    display: block;
+}
+
+canvas,
+img,
+picture,
+svg,
+video
+{
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--blackColor);
+    scrollbar-color: var(--whiteColor) transparent;
+
+    line-height: 1.5;
+	-webkit-text-size-adjust: 100%;
+}
+
+
+
