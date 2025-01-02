@@ -1,6 +1,16 @@
 <template>
-    <div>
+    <div id="app">
         <NuxtRouteAnnouncer />
-        <NuxtWelcome />
+        <Logo />
     </div>
 </template>
+
+<style scoped lang="scss">
+    #app {
+        min-height: 100dvh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
