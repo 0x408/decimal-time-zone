@@ -13,6 +13,7 @@ export default withNuxt(
             "vue/block-lang": ["error", { script: { lang: "ts" }, style: { lang: "scss" } }],
             "vue/block-order": ["error", { order: ["script", "template", "style"] }],
             "vue/html-indent": ["error", 4],
+            "vue/max-attributes-per-line": ["error", { singleline: { max: 5 }, multiline: { max: 1 } }],
             "vue/multi-word-component-names": "off",
             "@stylistic/comma-dangle": ["error", "never"],
             "@stylistic/indent": ["error", 4],
