@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    modules: ["@nuxt/eslint"],
+    modules: ["@nuxt/eslint", "nuxt-svgo-loader"],
     devtools: { enabled: true },
     css: ["~/assets/scss/main.scss", "~/assets/scss/root.scss"],
     runtimeConfig: {
@@ -13,5 +13,9 @@ export default defineNuxtConfig({
         config: {
             stylistic: true
         }
+    },
+    svgoLoader: {
+        defaultImport: "component",
+        svgo: false
     }
 });

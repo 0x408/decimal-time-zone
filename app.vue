@@ -33,15 +33,23 @@ useServerSeoMeta({
     <div id="app">
         <NuxtRouteAnnouncer />
         <Logo />
+        <Map />
     </div>
 </template>
 
 <style scoped lang="scss">
     #app {
+        position: relative;
+        overflow: hidden;
         min-height: 100dvh;
 
         display: flex;
         align-items: center;
         justify-content: center;
+
+        .map {
+            position: absolute;
+            z-index: -1;
+        }
     }
 </style>
